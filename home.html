@@ -1,0 +1,173 @@
+
+
+
+<ons-page id="homePage">
+        <ons-toolbar  style="background-color: #f7e336;">
+                <div class="left">
+                  <ons-toolbar-button>
+                      <ons-icon icon="fa-home"   id="home" style="color:black;"></ons-icon>
+                  </ons-toolbar-button>
+                </div>
+                <div class="center" style="text-align: center; color: black;">Food Monkey</div>
+                <div class="right">
+                    <ons-toolbar-button>
+                    <div id="logout">
+                        <ons-icon icon="fa-sign-out" style="color:black;"></ons-icon>
+                    </div> 
+                </ons-toolbar-button>
+                </div>
+              </ons-toolbar>
+  
+
+    <div class="content" style="text-align: center;" >
+        <div class="recomended" >
+            <h4>Recomended</h4>
+            <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
+                class="recomended_list" id="carousel">
+                <ons-carousel-item modifier="nodivider" id="item1" class="recomended_item">
+                    <div class="thumbnail" style="background-image: url('images/thumb1.png')">
+                    </div>
+                    <div class="recomended_item_title" id="item1_name">Item 1</div>
+                </ons-carousel-item>                
+            </ons-carousel>
+        </div>
+        <div>
+            <h4 style=" color: #000;">Food Category</h4>
+            <ons-row class="category">
+              <ons-col modifier="nodivider" id="Category_1" >
+                <div class="category_wrapper">
+                  <figure class="category_thumbnail" >
+                    <img src="images/item_1.jpg" alt="Fast Food" style="width:110px;height:100px;">
+                    <div class="category_title" id="Category_1_name" style="color: black;" >FastFood</div>
+                  </figure>
+                </div>
+              </ons-col>
+              <ons-col modifier="nodivider" id="Category_2" >
+                <div class="category_wrapper">
+                  <figure class="category_thumbnail">
+                    <img src="images/item_2.jpg" alt="Kebabs" style="width:110px;height:100px;">
+                    <div class="category_title" id="Category_2_name"  style="color: black;">Kebabs</div>
+                  </figure>
+                </div>
+              </ons-col>
+            </ons-row>
+            <ons-row class="category">
+              <ons-col modifier="nodivider" id="Category_3">
+                <div class="category_wrapper">
+                  <figure class="category_thumbnail" >
+                    <img src="images/item_3.jpg" alt="Chinese" style="width:110px;height:100px;">
+                    <div class="category_title" id="Category_3_name" style="color: black;">Chinese</div>
+                  </figure>
+                </div>
+              </ons-col>
+              <ons-col modifier="nodivider" id="Category_4">
+                <div class="category_wrapper">
+                  <figure class="category_thumbnail" >
+                    <img src="images/item4.jpg" alt="Pizza" style="width:110px;height:100px;">
+                    <div class="category_title" id="Category_4_name" style="color: black;">Pizza</div>
+                  </figure>
+                </div>
+              </ons-col>
+            </ons-row>
+            <ons-row class="category">
+              <ons-col modifier="nodivider" id="Category_5" >
+                <div class="category_wrapper">
+                  <figure class="category_thumbnail" >
+                    <img src="images/item5.jpg" alt="Vegeterian" style="width:110px;height:100px;">
+                    <div class="category_title" id="Category_5_name" style="color: black;">Vegeterian</div>
+                  </figure>
+                </div>
+              </ons-col>
+              
+              <ons-col modifier="nodivider" id="Category_6" >
+                <div class="category_wrapper">
+                  <figure class="category_thumbnail" >
+                    <img src="images/item_6.jpg" alt="Thai" style="width:110px;height:100px;">
+                    <div class="category_title" id="Category_6_name" style="color: black;">Thai</div>
+                  </figure>
+                </div>
+              </ons-col>
+            </ons-row>
+          </div>
+        </div>
+  
+        <style type="text/css">
+          .recomended_playlist {
+            padding-left: 10px;
+          }
+  
+          .recomended_playlist_title {
+            font-size: 12px;
+            font-weight: bold;
+          }
+  
+          .thumbnail {
+            width: 120px;
+            height: 120px;
+            display: table;
+            background-color: rgba(0, 0, 0, 0.42);
+          }
+  
+          .thumbnail ons-icon {
+            font-size: 70px;
+            color: rgba(190, 190, 190, 0.74);
+            display: table-cell;
+            vertical-align: middle !important;
+          }
+  
+          .recomended_list {
+            height: 150px;
+          }
+  
+          .recomended {
+            background: linear-gradient(rgb(208, 247, 211), #f7e336);
+            padding-top: 44px;
+  
+          }
+  
+          .menu_list {
+            background: transparent;
+          }
+  
+          .menu_item {
+            color: white;
+            font-size: 12px;
+          }
+  
+          .menu_item ons-icon {
+            margin-right: 10px;
+            color: gray;
+            font-size: 16px;
+          }
+  
+          .category {
+            margin: 20px 0px;
+            padding: 0px 30px;
+          }
+  
+          .category_wrapper {
+            max-width: 120px;
+            width: 90%;
+            margin: auto;
+            background-color: rgb(253, 237, 7);
+          }
+  
+          .category_wrapper ons-icon {
+            font-size: 55px;
+            padding-top: 10px;
+            line-height: 0.75em;
+          }
+  
+          .category_thumbnail {
+            display: inline-block;
+            margin: 16px 0px;
+          }
+  
+          .category_title {
+            font-size: 12px;
+            font-weight: bold;
+            padding-top: 10px;
+          }
+        </style>
+  
+</ons-page>
